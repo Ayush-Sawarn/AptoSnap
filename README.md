@@ -1,4 +1,4 @@
-﻿# AptoSnap
+# AptoSnap
 
 ### Features of App
 - Support for multiple accounts
