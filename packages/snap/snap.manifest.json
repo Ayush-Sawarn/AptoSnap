@@ -1,0 +1,53 @@
+{
+  "version": "0.0.1",
+  "description": "AptoSnap",
+  "proposedName": "AptoSnap",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sawarn-Ayush/AptoSnap.git"
+  },
+  "source": {
+    "shasum": "HsCua/Bw0AgUHJordn0arrGgYCtq+fIyG8NTbSWA3lY=",
+    "location": {
+      "npm": {
+        "filePath": "dist/bundle.js",
+        "packageName": "aptosnap",
+        "registry": "https://registry.npmjs.org/",
+        "iconPath": "images/icon.svg"
+      }
+    }
+  },
+  "initialPermissions": {
+    "snap_dialog": {},
+    "snap_notify": {},
+    "snap_manageState": {},
+    "endowment:transaction-insight": {},
+    "endowment:network-access": {},
+    "snap_getBip44Entropy": [
+      {
+        "coinType": 637
+      }
+    ],
+    "endowment:rpc": {
+      "dapps": true,
+      "snaps": false
+    },
+    "endowment:cronjob": {
+      "jobs": [
+        {
+          "expression": "* * * * *",
+          "request": {
+            "method": "balanceCheck"
+          }
+        },
+        {
+          "expression": "* * * * *",
+          "request": {
+            "method": "transactionCheck"
+          }
+        }
+      ]
+    }
+  },
+  "manifestVersion": "0.1"
+}
