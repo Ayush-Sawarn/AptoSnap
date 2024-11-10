@@ -7,6 +7,7 @@
 - Cron jobs for regularly notifying the user about the balance and status of last 5 transactions.
 
 ### Getting Started
+Clone the repository
 #### Snap
 - Run the below commands to start the snap
   ```shell
@@ -17,7 +18,6 @@
   ```
 
 #### Frontend
-- Clone the repository
 - Run the below commands to start the app
 ```shell
   cd packages/site
@@ -27,5 +27,5 @@
 
 
 #### **Note:** 
-Make sure snapID(in _packages/site/src/components/Header.tsx_) is same as port on which the server is running (i.e if is snap is running at localhost port 8080 then snapID is _local:http://localhost:8080_)
+Make sure snapID(in _packages/site/src/components/Header.tsx_) is same as port on which the server is running (i.e if is snap is running at localhost port 8080 then snapID is _local:http://localhost:8080_)<br>
 Also install Metamask Flask
